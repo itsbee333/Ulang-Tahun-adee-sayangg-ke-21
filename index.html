@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Kamu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<canvas id="petals"></canvas>
+
+<div class="slide-progress" id="slideProgress" aria-label="Navigasi slide"></div>
+<div class="slide-controls">
+  <button class="slide-arrow" id="slidePrev" aria-label="Slide sebelumnya">↑</button>
+  <button class="slide-arrow" id="slideNext" aria-label="Slide berikutnya">↓</button>
+</div>
+
+<!-- =========================================================
+     SEMUA YANG PERLU KAMU EDIT ADA DI OBJEK "CONFIG"
+     DI DALAM TAG <script> PALING BAWAH FILE INI.
+     Cari komentar "EDIT DI SINI".
+     ========================================================= -->
+
+<!-- GERBANG COUNTDOWN -->
+<div class="gate" id="gate">
+  <div class="eyebrow" id="gateEyebrow">menghitung hari</div>
+  <h1 id="gateTitle">Hari Spesial ade pasti seru <em>Segera Tiba</em></h1>
+  <p class="gate-sub" id="gateSub">Surprise buat ade sayangg, jangan lupa naikin volumenya</p>
+  <div class="countdown">
+    <div class="cd-box"><div class="cd-num" id="cdDays">00</div><div class="cd-label">Hari</div></div>
+    <div class="cd-box"><div class="cd-num" id="cdHours">00</div><div class="cd-label">Jam</div></div>
+    <div class="cd-box"><div class="cd-num" id="cdMinutes">00</div><div class="cd-label">Menit</div></div>
+    <div class="cd-box"><div class="cd-num" id="cdSeconds">00</div><div class="cd-label">Detik</div></div>
+  </div>
+  <p class="gate-note" id="gateNote">Bentar yahh ini pasti adee sayang suka</p>
+  <button class="gate-btn" id="gateBtn">Coba pencet dehh</button>
+</div>
+
+<section class="hero">
+  <div class="section-number">01 · Pembuka</div>
+  <div class="eyebrow">Buat adee sayangg pacar mas tercinta</div>
+  <h1 class="reveal in">Happy Birthday,<br><em id="heroName">Adee sayanggg/em></h1>
+  <div class="letter-card reveal in">
+    <div class="tag" id="letterTag">happy birthday Adee sayanggg 🤍</div>
+    <p id="heroSubtitle">Selamat ulang tahun ya adeee sayangg, ini buat hadiah pertama adee sayangg soalnya belum bisa dateng di hari H ulang tahun.</p>
+  </div>
+  <div class="scroll-cue"><span></span>scroll ke bawah</div>
+</section>
+
+<section>
+  <div class="section-number">02 · Video</div>
+  <h2 class="section-title reveal">A Moment For You</h2>
+  <p class="section-sub reveal" id="videoSub">sebuah video kecil, khusus untukmu</p>
+  <div class="video-frame reveal" id="videoFrame"></div>
+  <p class="video-caption reveal" id="videoCaption"></p>
+</section>
+
+<section>
+  <div class="section-number">03 · Galeri</div>
+  <h2 class="section-title reveal">Momen-Momen Kecil</h2>
+  <p class="section-sub reveal">Beberapa foto favoritku dari kita.</p>
+  <div class="polaroid-grid reveal" id="gallery"></div>
+  <div class="gallery-count reveal" id="galleryCount"></div>
+</section>
+
+<section>
+  <div class="section-number">04 · Cerita Kita</div>
+  <div class="reveal">
+    <div class="counter-num" id="dayCounter">0</div>
+    <div class="counter-label">hari kita udah saling kenal</div>
+  </div>
+</section>
+
+<section>
+  <div class="section-number">05 · Surat</div>
+  <div class="envelope-wrap reveal" id="envelopeWrap">
+    <div class="envelope" id="envelope">
+      <div class="base"></div>
+      <div class="flap"></div>
+      <div class="seal">♡</div>
+    </div>
+    <div class="letter-hint">klik amplopnya buat liat sedikit kata kata</div>
+  </div>
+  <div class="letter-box" id="letterBox">
+    <span id="letterBody"></span>
+    <span class="letter-sign" id="letterSign"></span>
+  </div>
+</section>
+
+<section class="finale">
+  <div class="section-number">06 · Penutup</div>
+  <div class="balloons" id="balloons"></div>
+  <div class="sparkle-field" id="sparkleField"></div>
+  <h2 class="finale-title reveal">Happy Birthday! 🎉</h2>
+  <div class="cake-wrap reveal" id="cakeWrap">
+    <div class="plate"></div>
+    <div class="cake">
+      <div class="candle"><div class="flame" id="flame"></div></div>
+      <div class="layer top"></div>
+      <div class="layer mid"></div>
+      <div class="layer bottom"></div>
+    </div>
+  </div>
+  <p class="letter-hint reveal" id="cakeHint">klik lilinnya, terus bikin permintaan</p>
+  <p class="finale-msg reveal" id="finaleMsg"></p>
+</section>
+
+<div class="music-toggle paused" id="musicToggle" title="Putar musik" aria-label="Putar/hentikan musik">
+  <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+</div>
+<audio id="bgMusic" loop preload="none"></audio>
+
+<footer id="footerText"></footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose">×</button>
+  <button class="lb-nav lb-prev" id="lbPrev">‹</button>
+  <img id="lbImg" src="" alt="">
+  <div class="lb-caption" id="lbCaption"></div>
+  <button class="lb-nav lb-next" id="lbNext">›</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
