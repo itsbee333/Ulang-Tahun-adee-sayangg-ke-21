@@ -58,7 +58,7 @@ const CONFIG = {
   // ---- MUSIK LATAR ----
   // Taruh file lagunya (mp3) di folder yang sama dengan file HTML ini.
   // Kalau nggak mau pakai musik, kosongkan jadi: musik: "",
-  musik: "Ini lagu.MP3",
+  musik: "Ini lagu.mp3",
   musikJudul: "klik untuk nyalain musik",
 
   // ---- SURAT CINTA ----
